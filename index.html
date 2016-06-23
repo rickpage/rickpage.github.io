@@ -5,21 +5,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>Welcome</title>
+  
+    <!-- Bootstrap -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <title>Welcome - RP Codes</title>
 <style>
 .starter-template {
-  padding: 40px 15px;
-  text-align: center;
+    margin: 8px 20px;
 }
 .icon-external {
     color: #337ab7;
 }
-</style>
 
-<!-- Bootstrap -->
-<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+#jdiv {
+    color: white;
+    background-color: #636;
+}
+
+.panel-heading, .panel {
+    border-color: #636 !important;
+}
+.panel-heading {
+    color: #FFF !important;
+    background-color: #969 !important;
+}
+#id-body {
+    background-color: #BBB;
+}
+</style>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,8 +44,7 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body>
-
+<body id="id-body">
     <!-- navbar -->
     <nav class="navbar navbar-default" >
     <div class="container-fluid">
@@ -40,19 +55,21 @@
                 <span class="icon-bar"></span> 
             </button>
 
-            <a class="navbar-brand" href="#">RP Codes</a>
-
+           <a class="pull-left" href="#">
+            <img src="/home/page/Documents/Dev/2016www/rickpage.github.io/static/img/rpc/favicon.ico"
+             />
+           </a>
         </div>
         
         <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="/static/html/portfolio.html">Portfolio</a></li>
-          <li><a href="#about">About</a></li> 
-          <li><a href="#">Contact</a></li> 
+          <!-- <li><a href="/static/html/services.html">Services</a></li> -->
+          <!-- <li><a href="#">Contact</a></li> -->
         </ul>
         <ul class="nav navbar-nav navbar-right">
-        
+
           <li><a href="mailto:admin@rpcodes">
           <span class="glyphicon glyphicon-send"></span>
           &nbsp;admin@rpcodes.biz</a>
@@ -67,11 +84,15 @@
     </nav>
     
     <!-- jumobtron -->
-    <div class="container">
-        <div class="jumbotron">
-            <h1>Cover Your App</h1>
-            <p>75.1% of U.S. internet users access the internet via mobile.</p>
-            
+    <div class="container-fluid starter-template" >
+        <div id="jdiv" class="jumbotron ">
+           
+            <div class="text-center">
+                 <h1>Cover Your App</h1>
+                 <h3>75.1% of the U.S. uses their mobile device to access the internet</h3>
+                 <br/>
+            </div>
+           
         </div>
     
     </div>
@@ -83,52 +104,66 @@
             2016
         </p>
     </div>
+    
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-4">
-                <div class="panel panel-default">
+                <div class="panel panel-info">
                     <div class="panel-heading">
-                        Text
+                        <h4>Custom Software</h4>
                     </div>
                     <div class="panel-body">
                         <p>
-                            Text
+                            RP Codes provides custom software and business solutions.
+                            With over 10 years software engineering experience,
+                            RP Codes is the right choice for developing your next
+                            ground-breaking App. RP Codes develops software for Android,
+                            Linux, and the Web.
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="panel panel-default">
+                <div class="panel panel-success">
                     <div class="panel-heading">
-                        <h3>Text</h3>
+                        <h4>Troubleshooting</h4>
                     </div>
                     <div class="panel-body">
                         <p>
-                            Text
+                           RP Codes also provides computer system and IT support.
+                           15 years troubleshooting across all major platforms,
+                           combined with hands on network design and installation experience,
+                           make RP Codes qualified to be your on-demand technology expert.
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4">
-                <div class="panel panel-default">
+                <div class="panel panel-warning">
                     <div class="panel-heading">
-                        <h3>Text</h3>
+                        <h4>Core Technologies</h4>
                     </div>
                     <div class="panel-body">
-                        <p>
-                            Text
-                        </p>
+                    <ul>
+                        <li>Mobile Apps for Android</li>
+                        <li>Python</li>
+                        <li>Java/J2EE</li>
+                        <li>OpenGL</li>
+                        <li>HTML5, CSS, & Javascript</li>
+                        <li>Linux</li>
+                        <li>Node.js</li>
+                    </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     
-    <div class="container-fluid">
+   <!--  <div class="container-fluid about-container">
         <div class="starter-template">
             <a name="about"></a>
-            <div class="panel panel-primary">
-                <div class="panel-heading">
+            <div class="panel panel-default">
+                <div class="panel-heading text-center">
                     <h3>About</h3>
                     <small>RP Codes</small>
                 </div>
@@ -137,9 +172,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div>
         <br>
         <br>
         <br>
@@ -148,10 +180,8 @@
         <br>
         <br>
         <br>
-        <br>
-        
-    </div>
-  
+        <br>     
+    </div>-->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
