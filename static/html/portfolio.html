@@ -8,29 +8,41 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    /* Add a gray background color and some padding to the footer */
-    footer {
-	  background-color: #f2f2f2;
-      padding: 25px;
-    }
-    .port {
-        color: #FFF;
-        background-color: #636;
-    }		
-	#id-body {
-		background-color: #BBB;
-	}
+   
+	body {
+    font-size: 16px;
+}
+#navbar {
+    border-radius: 0px;
+}
+.templ {
+    margin: 8px 20px;
+}
+.icon-external {
+    color: #337ab7;
+}
+
+#jdiv {
+    color: #FFF;
+    background-color: transparent;
+}
+
+#jdiv h2 {
+    color: #DDD;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+#id-body {
+    background-size: cover;
+    background-image: url('/static/img/rpc/abstract-800x600.png');
+    background-color: #BBB;
+}
   </style>
 </head>
-<body>
- <!-- navbar -->
-    <nav class="navbar navbar-default" >
+<body id="id-body">
+    <!-- navbar -->
+    <nav id="navbar" class="navbar navbar-default" >
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -39,16 +51,15 @@
                 <span class="icon-bar"></span> 
             </button>
 
-           <a class="pull-left" href="#">
-            <img src="/home/page/Documents/Dev/2016www/rickpage.github.io/static/img/rpc/favicon.ico"
-             />
+           <a class="pull-left navbar-brand" href="#">
+            <b>RP&nbsp;C<small>odes</small></b>
            </a>
         </div>
         
         <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li ><a href="/">Home</a></li>
-          <li class="active"><a href="#">Portfolio</a></li>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="/static/html/portfolio.html">Portfolio</a></li>
           <!-- <li><a href="/static/html/services.html">Services</a></li> -->
           <!-- <li><a href="#">Contact</a></li> -->
         </ul>
@@ -67,14 +78,15 @@
     </div>
     </nav>
     
-  <div class="container-fluid text-center jumbotron port">
+  <div class="container-fluid text-center jumbotron" id="jdiv">
     <h1>Portfolio</h1>      
     <p>Examples, live demos, and open source code.</p>
 </div>
   
 <div class="container-fluid bg-3 text-center">    
-  <h3>Some of my Work</h3><p>
-
+  <h3>Some of my Work</h3>
+  <p>
+	Open Source and Demos
   </p>
   <div class="row">
     <div class="col-sm-3">
