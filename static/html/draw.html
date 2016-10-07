@@ -1,5 +1,5 @@
 <html><head>
-    
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
@@ -7,7 +7,7 @@
 <script type="text/javascript" src="/static/js/rpcdraw.js"></script>
 <script>
 
-var init = false;   
+var init = false;
 
 var oClientHeight = 0;
 var oClientWidth = 0;
@@ -26,7 +26,7 @@ function createFullCanvas(optionalCurrentImage){
     param["currentImage"] = optionalCurrentImage;
   }
   initCanvas(param);
-  
+
 }
 $(document).ready(function(){
    createFullCanvas();
@@ -38,7 +38,7 @@ $(document).ready(function(){
 
 </script>
 <style type="text/css">
-    html, body {  
+    html, body {
      margin:0; /* remove default margin */
      padding:0; /* remove default padding */
      width:100%; /* take full browser width */
@@ -57,14 +57,8 @@ $(document).ready(function(){
 <body>
     <div id="toolbar" style="height: 8%; margin: 0 auto; border: 1px solid black;"></div>
 <div align="center" id="drawingContainer" style="margin: 0 auto; height: 90%; width: 90%">
-    
- <!--   <div id="colors"><span id="red" onclick='color("red");'>&nbsp;</span>
-    <span id="blue" onclick='color("blue");'>&nbsp;</span>
-    <span id="green" onclick='color("green");'>&nbsp;</span>
-    <span id="eraser" onclick='color("eraser");'>&nbsp;eraser&nbsp;</span></div> -->
-         
+
 </div>
 <span></span>
-<!-- <img id="iii" src="about:none" /> -->
 </body>
 </html>
