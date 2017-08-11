@@ -47,8 +47,8 @@ h3 {
     text-transform: uppercase;
 }
 .brand-tagline {
-    font-weight: 300;
-    color: rgb(176, 202, 219);
+  font-weight: 600;
+  color: rgb(191, 233, 250);
 }
 
 .nav-list {
