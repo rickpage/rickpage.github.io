@@ -30,10 +30,10 @@ function createPoint(x,y,c,w,d){
   })
 }
 function getX(e){
-  return !isNaN(e.pageX) ? e.pageX : e.originalEvent.touches[0].pageX;
+  return !isNaN(e.pageX) ? e.pageX : e.touches[0].pageX;
 }
 function getY(e){
-  return !isNaN(e.pageY) ? e.pageY : e.originalEvent.touches[0].pageY;
+  return !isNaN(e.pageY) ? e.pageY : e.touches[0].pageY;
 }
 function setColor(hexStr){
   color = hexStr;
