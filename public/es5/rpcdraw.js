@@ -29,6 +29,12 @@ function createPoint(x,y,c,w,d){
     drag: d,
   })
 }
+function getX(e){
+  return !isNaN(e.pageX) ? e.pageX : e.originalEvent.touches[0].pageX;
+}
+function getY(e){
+  return !isNaN(e.pageY) ? e.pageY : e.originalEvent.touches[0].pageY;
+}
 function setColor(hexStr){
   color = hexStr;
 }
@@ -47,8 +53,8 @@ function resizeCanvas() {
 }
 function startPainting(e){
   e.preventDefault();
-  var mouseX = e.pageX - this.offsetLeft;
-  var mouseY = e.pageY - this.offsetTop;
+  var mouseX = getX(e) - this.offsetLeft;
+  var mouseY = getY(e) - this.offsetTop;
   paint = true;
   var drag = false;
   createPoint(mouseX, mouseY, color, width, drag);
@@ -57,8 +63,8 @@ function startPainting(e){
 function drag(e){
   e.preventDefault();
   if (paint){
-    var mouseX = e.pageX - this.offsetLeft;
-    var mouseY = e.pageY - this.offsetTop;
+    var mouseX = getX(e) - this.offsetLeft;
+    var mouseY = getY(e) - this.offsetTop;
     var drag = true;
     createPoint(mouseX, mouseY, color, width, drag);
     redraw();
@@ -66,8 +72,8 @@ function drag(e){
 }
 function stopPainting(e){
   paint = false;
-  var mouseX = e.pageX - this.offsetLeft;
-  var mouseY = e.pageY - this.offsetTop;
+  var mouseX = getX(e) - this.offsetLeft;
+  var mouseY = getY(e) - this.offsetTop;
   var drag = false;
   createPoint(mouseX, mouseY, color, width, drag)
   redraw();
